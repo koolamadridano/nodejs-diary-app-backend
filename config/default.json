@@ -1,0 +1,4 @@
+{ 
+    "mongoURI": "mongodb+srv://dbUser:dbUserPassword@cluster0.ifoqu.mongodb.net/test",
+    "jwtSecret" : "b@ekdu$n"
+}
