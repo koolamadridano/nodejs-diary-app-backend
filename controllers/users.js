@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken')
 const config = require('config')
 const { validationResult, check } = require('express-validator')
 
-const User = require('../models/User');
+const User = require('../models/user');
 
 //@ROUTE        * api/users
 //@DESCRIPTION  * Register a user
@@ -22,9 +22,8 @@ router.post('/', [
             .status(400)
             .send(errors.array());
         }
-
         const { name, email, password } = req.body;
-        
+
         // check if user exists
         let user = await User.findOne({ email });
         if(user) {
