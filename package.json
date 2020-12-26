@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "heroku-postbuild": "npm run build"
+    "start": "node index.js"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/koolamadridano/nodejs-diary-app-backend.git"
@@ -27,5 +27,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.11.8",
     "request": "^2.88.2"
+  },
+  "engines": {
+    "node": "14.15.3"
   }
 }
